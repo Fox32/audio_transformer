@@ -1,17 +1,27 @@
 audio_transformer
 =================
 
-A Pub tranformer for converting audio files using [FFmpeg](http://www.ffmpeg.org/). As browser vendors still don't have agreed on one audio format for the usage in browsers  (see [MDN](https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats#Browser_compatibility)), you have to support multiple formats during the developent of your web application (for example a game). This Pub transformer creates the formats your require during your build.
+A Pub tranformer for converting audio files using [FFmpeg](http://www.ffmpeg.org/). 
+As browser vendors still don't have agreed on one audio format for the usage in 
+browsers  (see [MDN](https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats#Browser_compatibility)), 
+you have to support multiple formats during the developent of your web 
+application (for example a game). This Pub transformer creates the formats your 
+require during your build.
 
 ### Prerequisites
 
-This tranformer relies on FFmpeg, you need to install it first on your system. The installation depends on your operating system, see the [FFmpeg homepage](http://www.ffmpeg.org/) for download and install instructions.
+This tranformer relies on FFmpeg, you need to install it first on your system. 
+The installation depends on your operating system, see the 
+[FFmpeg homepage](http://www.ffmpeg.org/) for download and install instructions.
 
 *Make sure that FFmpeg is accessible via PATH!*
 
 ### Configuration
 
-The next step is configurating the transformer for your package. Add it to the ```dependencies``` and ```transformers``` sections of your ```pubspec.yaml``` and add the desired FFmpeg options. The following example converts ```m4a``` files to ```ogg```:
+The next step is configurating the transformer for your package. Add it to the 
+```dependencies``` and ```transformers``` sections of your ```pubspec.yaml``` 
+and add the desired FFmpeg options. The following example converts ```m4a``` 
+files to ```ogg```:
 
 ```
 transformers:
@@ -31,7 +41,8 @@ transformers:
        output_extension: '.webm'
 ```
 
-You can add multiple instances of the transformer to your ```pubspec.yaml``` if you need the files in different output formats.
+You can add multiple instances of the transformer to your ```pubspec.yaml``` if 
+you need the files in different output formats.
 
 #### codec
 

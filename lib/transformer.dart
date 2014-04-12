@@ -57,7 +57,7 @@ class AudioTransformer extends Transformer with DeclaringTransformer {
   }
 
   Future declareOutputs(DeclaringTransform transform) {
-    transform.declareOutput(transform.primaryInput.id.changeExtension(_outputExtension));
+    transform.declareOutput(transform.primaryId.changeExtension(_outputExtension));
 
     return new Future.value();
   }

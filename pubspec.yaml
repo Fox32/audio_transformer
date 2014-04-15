@@ -1,5 +1,5 @@
 name: audio_transformer
-version: 0.0.2
+version: 0.0.3
 author: Oliver Sand <oliver.sand@tentaclelabs.com>
 description: A Pub tranformer for converting audio files using FFmpeg.
 homepage: https://github.com/Fox32/audio_transformer

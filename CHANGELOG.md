@@ -1,6 +1,10 @@
 audio_transformer Changelog
 =================
 
+## Version 0.0.5 - Apr 17, 2014
+
+- Use LazyTransformer the right way
+
 ## Version 0.0.3 - Apr 15, 2014
 
 - Rename library name to match package guidelines

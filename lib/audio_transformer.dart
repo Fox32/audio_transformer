@@ -28,7 +28,7 @@ import 'package:path/path.dart' as path;
 import 'package:barback/barback.dart';
 
 /// A barback transformer that can be used to transform audio files via FFmpeg.
-class AudioTransformer extends Transformer with DeclaringTransformer {
+class AudioTransformer extends Transformer implements LazyTransformer {
   String _codec = 'libvorbis';
   String _outputExtension = '.ogg';
   final _inputExtensions = <String>['.m4a'];

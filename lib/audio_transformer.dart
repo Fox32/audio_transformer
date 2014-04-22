@@ -75,7 +75,7 @@ class AudioTransformer extends Transformer implements LazyTransformer {
 }
 
 Future<List<int>> _convertAudio(List<int> bytes, String codec, String inputExtension, String outputExtension) {
-  return Directory.systemTemp.createTemp('project-z_').then((tempDir) {
+  return Directory.systemTemp.createTemp('audio-transformer_').then((tempDir) {
     final inputFileName = path.join(tempDir.path, 'input$inputExtension');
     final outputFileName = path.join(tempDir.path, 'output$outputExtension');
     final arguments = ['-y', '-i', inputFileName, '-acodec', codec, outputFileName];

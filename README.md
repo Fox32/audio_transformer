@@ -19,9 +19,9 @@ The installation depends on your operating system, see the
 ### Configuration
 
 The next step is configurating the transformer for your package. Add it to the 
-```dependencies``` and ```transformers``` sections of your ```pubspec.yaml``` 
-and add the desired FFmpeg options. The following example converts ```m4a``` 
-files to ```ogg```:
+`dependencies` and `transformers` sections of your `pubspec.yaml` 
+and add the desired FFmpeg options. The following example converts `m4a` 
+files to `ogg`:
 
 ```
 transformers:
@@ -31,7 +31,7 @@ transformers:
        output_extension: '.ogg'
 ```
 
-The next example converts a ```m4a``` file to ```webm```:
+The next example converts a `m4a` file to `webm`:
 
 ```
 transformers:
@@ -41,7 +41,7 @@ transformers:
        output_extension: '.webm'
 ```
 
-You can add multiple instances of the transformer to your ```pubspec.yaml``` if 
+You can add multiple instances of the transformer to your `pubspec.yaml` if 
 you need the files in different output formats.
 
 #### codec

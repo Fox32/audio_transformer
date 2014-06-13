@@ -1,6 +1,10 @@
 audio_transformer Changelog
 =================
 
+## Version 0.0.7 - June 13, 2014
+
+- Fix formatting of the readme
+
 ## Version 0.0.6 - May 29, 2014
 
 - Improve version constraint to barback
